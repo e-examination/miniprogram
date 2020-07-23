@@ -1,0 +1,6 @@
+<!--pages/auth/auth.wxml-->
+<view class='container'>
+  <view class='btn-box'>
+    <button class='bg-grn' open-type='getUserInfo' bindgetuserinfo='bindGetUserinfo'>微信登录</button>
+  </view>
+</view>

@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/auth/auth"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,6 +10,6 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }
