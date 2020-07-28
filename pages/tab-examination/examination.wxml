@@ -1,2 +1,7 @@
 <!--pages/tab-examination/examination.wxml-->
-<text>pages/tab-examination/examination.wxml</text>
+
+<!-- ↓未预约↓ -->
+
+<!-- ↓已预约，未开始↓ -->
+
+<!-- ↓已开始↓ -->
