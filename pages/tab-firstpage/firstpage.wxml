@@ -2,8 +2,26 @@
 
 <!-- ↓搜索框↓ -->
 
+<van-search
+  value="{{ value }}"
+  placeholder="搜索医院或体检项目"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+
 <!-- ↓定点合作医院↓ -->
 
 <!-- ↓精选套餐↓ -->
+
+<van-tabs active="a">
+  <van-tab title="标签 1" name="a"></van-tab>
+  <van-tab title="标签 2" name="b"></van-tab>
+  <van-tab title="标签 3" name="c"></van-tab>
+</van-tabs>
+
+<van-grid column-num="1" gutter="{{ 10 }}">
+  <van-grid-item text="" wx:for="{{ 2 }}" />
+</van-grid>
 
 <!-- ↓个性定制↓ -->
