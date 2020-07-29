@@ -1,5 +1,25 @@
 {
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [{
+      "pagePath": "pages/tab-firstpage/firstpage",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/tab-examination/examination",
+      "text": "体检"
+    }, {
+      "pagePath": "pages/tab-me/me",
+      "text": "我的"
+    }]
+  },
+
   "pages":[
+    "pages/tab-firstpage/firstpage",
+    "pages/tab-examination/examination",
+    "pages/tab-me/me",
     "pages/index/index",
     "pages/logs/logs",
     "pages/auth/auth"
