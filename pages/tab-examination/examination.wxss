@@ -1,1 +1,47 @@
 /* pages/tab-examination/examination.wxss */
+
+/*未预约界面WXSS*/
+
+/*图片设置*/
+.graphic{
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.graphic image{
+width: 600rpx;
+height: 400rpx;
+}
+/*字体设置*/
+.nomal{
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.tips{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 120px;
+  font-weight: bold;
+}
+#reserve{
+  font-size: small;
+  width: 40%;
+ position: absolute;
+  top: 380px;
+  left: 25px;
+}
+
+#check{
+  font-size: small;
+  width: 40%;
+ position: absolute;
+  top: 380px;
+  left: 170px;
+}
+/*------------分割线-----------*/
