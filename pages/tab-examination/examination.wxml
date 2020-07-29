@@ -2,6 +2,14 @@
 
 <!-- ↓未预约↓ -->
 
+<view class="graphic">
+<image src="/3.jpg"></image>
+</view>
+<text class="nomal" >您还没有待进行的体检内容</text>
+<text class="tips" >您可以快速预约或查看体检历史</text>
+<button id="reserve">快速预约</button>
+<button id="check">查看体检历史</button>
+
 <!-- ↓已预约，未开始↓ -->
 
 <!-- ↓已开始↓ -->
