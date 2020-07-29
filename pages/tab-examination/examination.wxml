@@ -11,5 +11,26 @@
 <button id="check">查看体检历史</button>
 
 <!-- ↓已预约，未开始↓ -->
+<van-panel title="体检"  status="待评价" use-footer-slot>
+
+  <van-card
+  num="1"
+  price="260.00"
+  title="新冠核酸检测-极速预约"
+  thumb="{{ }}"
+/>
+ <view class='section'>
+  
+       <text class='content shape'>
+        体检人      张**
+        预约时间    2020-06-18
+        预约地点   北京海定中关村
+        </text>
+
+</view>
+<view ><text class='t1' >共1件商品 合计：260.00\n</text>
+<button  size="mini">我已到达，开始排队</button></view>
+</van-panel>
+
 
 <!-- ↓已开始↓ -->

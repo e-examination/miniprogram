@@ -45,3 +45,30 @@ height: 400rpx;
   left: 170px;
 }
 /*------------分割线-----------*/
+
+
+/* 已预约，未开始WXSS*/
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+.shape{
+height: 100px;
+width: 350px;
+}
+.content{
+  background: rgb(241, 213, 213);
+}
+
+.t1{
+  position: fixed;
+  right: 5rpx;
+}
+.mini-btn{
+position: fixed;
+right: 5rpx;
+
+}

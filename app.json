@@ -30,7 +30,20 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-  "usingComponents": {},
+  "usingComponents": {
+    "van-card": "@vant/weapp/card/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
+
+
+
+
+
+  },
   "sitemapLocation": "sitemap.json"
 }
 
