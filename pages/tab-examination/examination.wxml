@@ -1,36 +1,53 @@
-<!--pages/tab-examination/examination.wxml-->
+<view class="view">
+	<!-- ↓未预约↓ -->
+	<view class="graphic">
+		<image src="/3.jpg"></image>
+	</view>
+	<text class="nomal" >您还没有待进行的体检内容</text>
+	<text class="tips" >您可以快速预约或查看体检历史</text>
+	<button id="reserve">快速预约</button>
+	<button id="check">查看体检历史</button>
 
-<!-- ↓未预约↓ -->
+	<!-- ↓已预约，未开始↓ -->
+	<van-panel title="体检" status="待评价" use-footer-slot>
 
-<view class="graphic">
-<image src="/3.jpg"></image>
-</view>
-<text class="nomal" >您还没有待进行的体检内容</text>
-<text class="tips" >您可以快速预约或查看体检历史</text>
-<button id="reserve">快速预约</button>
-<button id="check">查看体检历史</button>
-
-<!-- ↓已预约，未开始↓ -->
-<van-panel title="体检"  status="待评价" use-footer-slot>
-
-  <van-card
-  num="1"
-  price="260.00"
-  title="新冠核酸检测-极速预约"
-  thumb="{{ }}"
-/>
- <view class='section'>
-  
-       <text class='content shape'>
+		<van-card num="1" price="260.00" title="新冠核酸检测-极速预约" thumb="{{ }}" />
+		<view class='section'>
+			<text class='content shape'>
         体检人      张**
         预约时间    2020-06-18
         预约地点   北京海定中关村
         </text>
+		</view>
+		<view><text class='t1' >共1件商品 合计：260.00\n</text>
+			<button size="mini">我已到达，开始排队</button></view>
+	</van-panel>
+	<!-- ↓已开始↓ -->
 
+	<!-- 悬浮导航球 -->
+	<view class="menu-box">
+		<view class="navbar {{ play?'active':'' }}">
+			<view class="btn" bindtap="changePlay">
+				<view class="line" animation="{{ !play?line1CloseAn:line1OpenAn }}"></view>
+				<view class="line" animation="{{ !play?line2CloseAn:line2OpenAn }}"></view>
+				<view class="title" animation="{{ !play?titleCloseAn:titleOpenAn }}">
+					排队
+				</view>
+			</view>
+		</view>
+		<view class="menu">
+			<view animation="{{ !play?btn4Close:btn4Open }}" bindtap="aotoqueue">
+				<text>自动排队</text>
+			</view>
+			<view animation="{{ !play?btn3Close:btn3Open }}">
+				<text>开始排队</text>
+			</view>
+			<view animation="{{ !play?btn2Close:btn2Open }}">
+				<text>终止排队</text>
+			</view>
+			<view animation="{{ !play?btn1Close:btn1Open }}">
+				<text>自定义</text>
+			</view>
+		</view>
+	</view>
 </view>
-<view ><text class='t1' >共1件商品 合计：260.00\n</text>
-<button  size="mini">我已到达，开始排队</button></view>
-</van-panel>
-
-
-<!-- ↓已开始↓ -->

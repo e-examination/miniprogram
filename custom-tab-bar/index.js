@@ -8,12 +8,12 @@ Component({
 				url: '/pages/tab-firstpage/firstpage'
 			},
 			{
-				icon: 'search',
+				icon: 'user-circle-o',
 				text: '体检',
 				url: '/pages/tab-examination/examination'
 			},
 			{
-				icon: 'search',
+				icon: 'setting-o',
 				text: '我的',
 				url: '/pages/tab-me/me'
 			}

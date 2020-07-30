@@ -1,6 +1,9 @@
 /* pages/tab-examination/examination.wxss */
 
-/*未预约界面WXSS*/
+/*界面*/
+.view{
+  bottom: 50px;
+}
 
 /*图片设置*/
 .graphic{
@@ -72,3 +75,75 @@ position: fixed;
 right: 5rpx;
 
 }
+/* 悬浮导航球css */
+.menu-box {
+  position: fixed;
+  bottom: 40vw;
+  right: 30rpx;
+  width: 100rpx;
+  padding-bottom: 100rpx;
+}
+.menu-box .navbar {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0rpx;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0rpx;
+  border-radius: 50%;
+}
+.menu-box .navbar>.btn {
+  padding: 25rpx;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.menu-box .navbar>.btn>.line {
+  height: 6rpx;
+  background-color: white;
+  margin: 0px 2rpx 6rpx 2rpx;
+  border-radius: 6rpx;
+}
+.menu-box .navbar>.btn>.title {
+  font-size: 20rpx;
+}
+.menu-box .active {
+  background-color: pink;
+}
+.menu-box .menu{
+  height: 100rpx;
+  position: relative;
+  bottom: -100rpx;
+}
+.menu-box .menu>view {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  font-size: 0rpx;
+  color: red;
+}
+.menu-box .menu>view text{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width:100%;
+  height: 100%;
+  color: white;
+  z-index: 10000;
+  font-size: 25rpx;
+}
+
+
+
