@@ -1,1 +1,4 @@
 /* pages/tab-firstpage/firstpage.wxss */
+.tabs-root{
+    margin: 5px;
+}

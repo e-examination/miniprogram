@@ -23,7 +23,7 @@ const wxApiPromisify = {
   wxsetDataPromisify: (pageObj, obj) => {
     if (pageObj && obj){
       return new Promise((resolve, reject) => {
-        pageObj.setdata(obj, resolve(obj));
+        pageObj.setData(obj, resolve(obj));
       });
     }
   },

@@ -1,36 +1,40 @@
 <!--pages/tab-examination/examination.wxml-->
 
-<!-- ↓未预约↓ -->
+<!-- ==========注意：此处使用了条件渲染，如果要更改显示界面，应在app.js文件的底部，调整gData中的mode值。================== -->
 
-<view class="graphic">
-<image src="/3.jpg"></image>
-</view>
-<text class="nomal" >您还没有待进行的体检内容</text>
-<text class="tips" >您可以快速预约或查看体检历史</text>
-<button id="reserve">快速预约</button>
-<button id="check">查看体检历史</button>
+<!-- ↓未预约↓ -->
+<van-empty wx:if="{{showMode === 1}}" description="您还没有待进行的项目" >
+  <button id="reserve">快速预约</button>
+  <button id="check">体检记录</button>
+</van-empty>
+
+
 
 <!-- ↓已预约，未开始↓ -->
-<van-panel title="体检"  status="待评价" use-footer-slot>
 
-  <van-card
-  num="1"
-  price="260.00"
-  title="新冠核酸检测-极速预约"
-  thumb="{{ }}"
-/>
- <view class='section'>
-  
-       <text class='content shape'>
-        体检人      张**
-        预约时间    2020-06-18
-        预约地点   北京海定中关村
-        </text>
+<van-panel wx:elif="{{showMode === 2}}" title="体检"  status="{{test_status}}"  custom-class="panel" header-class="panel-header" use-footer-slot="true">
 
-</view>
-<view ><text class='t1' >共1件商品 合计：260.00\n</text>
-<button  size="mini">我已到达，开始排队</button></view>
+  <van-card num="1"  price="{{test_price}}"  title="{{test_name}}"  thumb="{{test_image}}" custom-class="card">
+    <view slot="footer">
+      <view class="infocontainer">
+        <text class="info" space="ensp" >体 检 人  {{test_person}}\n</text>
+        <text class="info" space="ensp" >预约时间  {{test_starttime}}\n</text>
+        <text class="info" space="ensp" >预约地点  {{test_hospital}}\n</text>
+      </view>
+    </view>
+  </van-card>
+
+  <text class="price_total" >合计：￥{{test_price}}\n</text>  
+
+  <view slot="footer" >
+    <van-button custom-class="button" size="small">我已到达，开始排队</van-button>
+  </view>
+
 </van-panel>
 
 
 <!-- ↓已开始↓ -->
+
+
+<!-- 出错了 -->
+<van-empty  wx:else image="error" description="出现未知错误" />

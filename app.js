@@ -160,14 +160,14 @@ App({
           _this.gData.userinfo = res.data.data.userinfo;
 
           //更新自定义登录态的缓存数据，异步执行即可。
-          wxapi('setStorage', {
+          wxApiPromisify('setStorage', {
             'key': loginKey,
             'data': res.data.data.userinfo
           })
           .catch(function(error) {
             //倘若异步执行的结果失败，直接清除自定义登录态缓存，再次进入小程序时系统会自动重新登录生成新的
             console.warn(error.errMsg);
-            wxapi('removeStorage', {
+            wxApiPromisify('removeStorage', {
               'key': loginKey
             });
           });
@@ -301,10 +301,11 @@ App({
   /**
    * 预定义全局控制字段
    */
-  'gData': {
-    'logined': false, //用户是否登录
-    'authsetting': null, //用户授权结果
-    'userinfo': null, //用户信息(包含自定义登录态token)
+  gData: {
+    logined: false, //用户是否登录
+    authsetting: null, //用户授权结果
+    userinfo: null, //用户信息(包含自定义登录态token)
+    mode: 1//体检状态，用于识别tab-examination页面的展示。1：未预约；2：已预约，未开始；3：已开始
   },
   /*
   globalData: {

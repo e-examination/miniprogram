@@ -5,23 +5,47 @@
 <van-search
   value="{{ value }}"
   placeholder="搜索医院或体检项目"
-  show-action
+  shape="round"
   bind:search="onSearch"
   bind:cancel="onCancel"
 />
 
+<van-cell-group title="暂时占位"/>
 <!-- ↓定点合作医院↓ -->
 
 <!-- ↓精选套餐↓ -->
 
-<van-tabs active="a">
-  <van-tab title="标签 1" name="a"></van-tab>
-  <van-tab title="标签 2" name="b"></van-tab>
-  <van-tab title="标签 3" name="c"></van-tab>
+<van-tabs active="{{ active }}" swipeable="true" custom-class="tabs-root">
+
+  <van-tab title="标签 1">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="1"/>
+        <van-grid-item text="1"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
+  <van-tab title="标签 2">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="2"/>
+        <van-grid-item text="2"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
+  <van-tab title="标签 3">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="3"/>
+        <van-grid-item text="3"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
 </van-tabs>
 
-<van-grid column-num="1" gutter="{{ 10 }}">
-  <van-grid-item text="" wx:for="{{ 2 }}" />
-</van-grid>
+
 
 <!-- ↓个性定制↓ -->

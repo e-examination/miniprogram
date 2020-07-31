@@ -6,6 +6,7 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -15,6 +16,7 @@
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -25,10 +27,8 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false,
-		"enhance": false,
-		"uglifyFileName": false,
 		"packNpmManually": false,
 		"packNpmRelationList": []
 	},
@@ -70,6 +70,27 @@
 					"id": -1,
 					"name": "授权页面",
 					"pathName": "pages/auth/auth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导航栏 我的",
+					"pathName": "pages/tab-me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导航栏 体检",
+					"pathName": "pages/tab-examination/examination",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导航栏 首页",
+					"pathName": "pages/tab-firstpage/firstpage",
 					"scene": null
 				}
 			]

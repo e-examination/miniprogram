@@ -1,12 +1,37 @@
 // pages/tab-examination/examination.js
+const app = getApp();
+import {wxApiPromisify, wxsetDataPromisify} from '../../utils/wxApiPromisify';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    showMode: 0,
+    test_status: "未开始",
+    test_name: "核酸检测快速预约",
+    test_image: "https://img.yzcdn.cn/vant/cat.jpeg",
+    test_price: "230",
+    test_person: "张三",
+    test_starttime: "2020-2-20",
+    test_hospital: "北京协和医院"
   },
+
+  
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    var _this = this;
+    this.getTabBar().init();
+
+    this.setData({
+      showMode: app.gData.mode
+    });
+    
+  },
+
+  //以下暂时没有使用-----------------------------------------------------------------------------------------------
 
   /**
    * 生命周期函数--监听页面加载
@@ -22,12 +47,6 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    this.getTabBar().init();
-  },
 
   /**
    * 生命周期函数--监听页面隐藏
