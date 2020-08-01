@@ -20,9 +20,16 @@
     "pages/tab-firstpage/firstpage",
     "pages/tab-examination/examination",
     "pages/tab-me/me",
+
     "pages/index/index",
     "pages/logs/logs",
-    "pages/auth/auth"
+
+
+    "pages/auth/auth",
+    "pages/userInfo/userInfo",
+    "pages/testhistory/testhistory",
+    "pages/hospitals/hospitals",
+    "pages/medicaltests/medicaltests"
   ],
   "window":{
     "backgroundColor": "#F6F6F6",
