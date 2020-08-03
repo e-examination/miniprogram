@@ -1,1 +1,60 @@
 /* pages/userInfo/userInfo.wxss */
+page{
+  background-color:white;
+}
+.open-data-userAvatarUrl {
+  /*用户头像样式*/
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40rpx auto;
+  position: absolute;
+  left: 25px;
+}
+.line1{
+/*用户昵称样式*/
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis; 
+  font-weight: bold;
+  font-size: medium;
+  position: absolute;
+  left: 100px;
+  top: 42px;
+}
+.divideline1{
+  background: rgba(0, 0, 255, 0.433);
+  width: 800px;
+  height: 5px;
+}
+.divideline2{
+  background:rgba(169, 162, 162, 0.399);
+  width: 800px;
+  height: 5rpx;
+}
+.item1{
+  position: absolute;
+  top: 108px;
+}
+.item2{
+  position: absolute;
+  top: 318px;
+}
+.title{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.vcg1{
+  position: absolute;
+  top: 143px;
+}
+.adjust{
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: 425px;
+  left: 80px;
+}

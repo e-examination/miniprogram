@@ -91,6 +91,13 @@
 					"id": -1,
 					"name": "导航栏 首页",
 					"pathName": "pages/tab-firstpage/firstpage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息界面",
+					"pathName": "pages/userInfo/userInfo",
 					"scene": null
 				}
 			]
