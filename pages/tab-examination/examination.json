@@ -1,5 +1,6 @@
 {
-  "navigationBarTitleText": "体检",
+  "navigationBarTitleText": "体检记录",
+
   "usingComponents": {
     "van-empty": "@vant/weapp/empty/index"
   }
