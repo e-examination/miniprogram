@@ -10,11 +10,16 @@
   bind:cancel="onCancel"
 />
 
-<van-cell-group title="暂时占位"/>
+<van-cell-group>
+  <van-cell title="定点合作医院" value="更多医院" />
+</van-cell-group>
+
 <!-- ↓定点合作医院↓ -->
 
 <!-- ↓精选套餐↓ -->
-
+<van-cell-group>
+  <van-cell title="精选套餐" value="更多套餐" />
+</van-cell-group>
 <van-tabs active="{{ active }}" swipeable="true" custom-class="tabs-root">
 
   <van-tab title="标签 1">
@@ -49,3 +54,6 @@
 
 
 <!-- ↓个性定制↓ -->
+<van-cell-group>
+  <van-cell title="个性定制" />
+</van-cell-group>
