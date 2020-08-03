@@ -2,3 +2,10 @@
 .tabs-root{
     margin: 5px;
 }
+.info{
+    font-size: small;
+  }
+
+ 
+
+ 

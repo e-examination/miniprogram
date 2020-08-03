@@ -6,6 +6,16 @@ Page({
    */
   data: {
     active: 0,
+    test_status: "更多医院",
+    test_name: "北京协和医院",
+    test_image: "https://img.yzcdn.cn/vant/cat.jpeg",
+    test_price: "230",
+    test_person: "张三",
+    test_starttime: "2020-2-20",
+    test_hospital: "北京协和医院",
+    test_place:"杨浦区",
+    test_num:"250",
+    test_num1:"9.5"
   },
 
   /**
