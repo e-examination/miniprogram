@@ -1,0 +1,14 @@
+<!-- 自定义组件内部结构 -->
+<view class="inner">
+
+    <!-- 组件左边：色块 -->
+    <view class="placeholder"/>
+
+    <!-- 组件中间：分类说明 -->
+    <text class="classification">{{description}}</text>
+
+    <!-- 组件右侧：了解更多 -->
+    <text class="more" bind:tap="getMoreInfo">{{learnMore}}</text>
+
+    <slot></slot>
+</view>

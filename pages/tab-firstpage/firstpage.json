@@ -1,6 +1,10 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
+
+    "my-naviMenu": "../../components/navigateMenu/navigateMenu",
+    "my-hospitalCard": "../../components/hospitalCard/hospitalCard",
+
     "van-search": "@vant/weapp/search/index",
 
     "van-tab": "@vant/weapp/tab/index",
@@ -11,7 +15,9 @@
 
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
+
     "van-button": "@vant/weapp/button/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index"
   }
 }

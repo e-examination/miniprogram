@@ -1,31 +1,35 @@
 <!--pages/userInfo/userInfo.wxml-->
-<view>
+
+<view class="opendata">
+
   <!--获取用户微信头像-->
-  <open-data class="open-data-userAvatarUrl" type="userAvatarUrl"></open-data>    
-</view>
-<view>
-<!--获取用户微信昵称-->
-<open-data class="open-data-userNickName line1" type="userNickName"></open-data>
-</view>
-<view class="divideline1"></view>
-<!--item1：用户信息表头-->
-<view class="item1">
-<view class="divideline1"></view>
-<van-icon name="user-o" size="20px" />
-<text class="title">用户信息</text>
-</view>
-<!--表单1：主要信息-->
-<van-cell-group class="vcg1">
-  <van-cell title="姓名" title-width="80px"     value="未编辑"/>
-  <van-cell title="性别" title-width="80px"     value="未编辑"/>
-  <van-cell title="证件类型" title-width="80px" value="未编辑"/>
-  <van-cell title="证件号码" title-width="80px" value="未编辑"/>
-</van-cell-group>
-<!--item2：用户联系方式-->
-<view class="item2">
-<van-icon name="phone" size="20px"/>
-<text class="title">联系方式</text>
-<van-cell title="联系电话" title-width="80px" value="未编辑"/>
+  <view>
+    <open-data class="userAvatarUrl" type="userAvatarUrl"></open-data>    
+  </view>
+
+  <!--获取用户微信昵称-->
+  <view>
+    <open-data class="userNickName" type="userNickName"></open-data>
+  </view>
 
 </view>
-<button class="adjust">修改信息</button>
+
+<!-- 用户信息查看 -->
+<view >
+
+  <van-cell-group title="用户信息">
+    <van-cell title="姓名" title-width="80px"     value="未编辑"/>
+    <van-cell title="性别" title-width="80px"     value="未编辑"/>
+    <van-cell title="证件类型" title-width="80px" value="未编辑"/>
+    <van-cell title="证件号码" title-width="80px" value="未编辑"/>
+  </van-cell-group>
+
+  <van-cell-group title="联系方式">
+    <van-cell title="手机号码" title-width="80px" value="未编辑"/>
+  </van-cell-group>
+
+  <button >修改信息</button>
+
+</view>
+
+<!-- 用户信息填写 -->

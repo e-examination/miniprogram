@@ -11,42 +11,35 @@
 />
 
 
-<van-cell-group>
-  <van-cell title="定点合作医院" value="更多医院" />
-</van-cell-group>
-
+<my-naviMenu description="定点合作医院" learnMore="更多医院" url="../../pages/auth/auth" />
 
 <!-- ↓定点合作医院↓ -->
-<van-panel active="{{ active }}" title="定点合作医院"  status="{{test_status}}"  custom-class="panel" header-class="panel-header" use-footer-slot="true">
 
-  <van-card    title="{{test_name}}"  thumb="{{test_image}}" custom-class="card">
- <view slot="tags">
-<van-row >
-  <van-col span="3"><van-tag plain type="success"> 标签</van-tag></van-col>
-  <van-col span="3"><van-tag plain type="success"> 标签</van-tag></van-col>
-  <van-col span="3"><van-tag plain type="success"> 标签</van-tag></van-col>
-  <van-col span="4" offset="11"><text >评分{{test_num1}}</text></van-col>
-</van-row>
+<my-hospitalCard></my-hospitalCard>
 
+<van-card  title="{{test_name}}" custom-class="card">
 
+  <van-image slot="thumb" src=" {{test_image}}" fit="cover" width="180rpx" height="180rpx" />
+  
+  <view slot="tags" class="tag-Box">
+    <van-tag wx:for="{{3}}" class="tag" plain type="success">标签</van-tag>
+    <text class="score">评分{{test_num1}}</text>
   </view>
 
-<view slot="bottom">
-<van-row type="flex" justify="space-between">
-  <van-col span="6">{{test_place}}</van-col>
-  <van-col span="6"></van-col>
-  <van-col span="4" offset="14">月销{{test_num}}</van-col>
-</van-row>
-
-      
+  <view slot="bottom">
+    <van-row type="flex" justify="space-between">
+      <van-col span="6">{{test_place}}</van-col>
+      <van-col span="6"></van-col>
+      <van-col span="4" offset="10">月销{{test_num}}</van-col>
+    </van-row>
   </view>
-  </van-card>
 
-</van-panel>
+</van-card>
+
+
 <!-- ↓精选套餐↓ -->
-<van-cell-group>
-  <van-cell title="精选套餐" value="更多套餐" />
-</van-cell-group>
+<my-naviMenu description="精选套餐" learnMore="全部体检" url="../../pages/auth/auth" />
+
 <van-tabs active="{{ active }}" swipeable="true" custom-class="tabs-root">
 
   <van-tab title="标签 1">
@@ -81,6 +74,7 @@
 
 
 <!-- ↓个性定制↓ -->
-<van-cell-group>
-  <van-cell title="个性定制" />
-</van-cell-group>
+<my-naviMenu description="体检定制"/>
+<van-cell></van-cell>
+<van-cell></van-cell>
+<van-cell></van-cell>
