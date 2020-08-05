@@ -4,8 +4,19 @@
 }
 .info{
     font-size: small;
-  }
+}
 
- 
+/*
+.tag-Box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
- 
+.tag{
+    margin: 5rpx;
+}
+
+.score{
+    margin-left: auto;
+}

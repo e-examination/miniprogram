@@ -1,0 +1,25 @@
+.inner{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.placeholder{
+    height: 30px;
+    width: 10px;
+    background-color: grey;
+    margin-left: 10px;
+}
+
+.classification{
+    font-size: large;
+    margin-left: 10px;
+}
+
+.more{
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: medium;
+    color: silver;
+}
