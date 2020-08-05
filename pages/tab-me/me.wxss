@@ -1,1 +1,29 @@
 /* pages/tab-me/me.wxss */
+.user{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.userAvatar{
+    
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%;  
+    overflow:hidden; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+
+}
+
+.userNickName{
+    
+    color: black;
+    margin-top: 100px;
+
+}
+

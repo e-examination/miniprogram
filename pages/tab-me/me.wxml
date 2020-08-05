@@ -2,9 +2,19 @@
 
 <!-- ↓头像以及欢迎语↓ -->
 
+<view class="user">
+  <view class="userAvatar" >
+    <open-data type="userAvatarUrl" ></open-data>
+  </view>
+  <view class="userNickName">
+    <open-data type="userNickName" class="userNickName"></open-data>
+  </view>
+</view>
+
+
 <!-- ↓宫格导航↓ -->
 <van-grid column-num="3" square gutter="{{ 10 }}" >
-  <van-grid-item icon="user-o" text="个人资料"  />
+  <van-grid-item icon="user-o" text="个人资料"  url="../userInfo/userInfo"/>
 
   <van-grid-item icon="photo-o" text="文字"  />
   <van-grid-item icon="photo-o" text="文字"  />
