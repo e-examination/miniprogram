@@ -54,7 +54,15 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
-    "van-tag": "@vant/weapp/tag/index"
+    "van-tag": "@vant/weapp/tag/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+   "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+   "van-goods-action": "@vant/weapp/goods-action/index",
+  "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+  "van-goods-action-button": "@vant/weapp/goods-action-button/index"
+
+
   },
   "sitemapLocation": "sitemap.json"
 }

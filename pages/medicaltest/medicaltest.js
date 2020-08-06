@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    test_image: "https://img.yzcdn.cn/vant/cat.jpeg",
+    test_price: "230",
+    test_person: "张三",
+    test_starttime: "2020-2-20",
+    test_hospital: "北京协和医院",
+    active:1,
   },
 
   /**
@@ -28,6 +33,11 @@ Page({
   onShow: function () {
 
   },
+  onChange(event) {
+    console.log(event.detail);
+  },
+ 
+
 
   /**
    * 生命周期函数--监听页面隐藏
