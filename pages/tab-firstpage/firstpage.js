@@ -1,4 +1,4 @@
-const { mock } = require("../../node_modules/mockjs");
+const { mock } = require("mockjs");
 
 // pages/tab-firstpage/firstpage.js
 Page({
@@ -11,6 +11,7 @@ Page({
     hospital_name: "北京协和医院",
     hospital_image: "https://img.yzcdn.cn/vant/cat.jpeg",
     hospital_address:"北京市东城区帅府园1号",
+    hospital_tags: ['三甲医院','周六上班'],
     hospital_mAmount:"250",
     hospital_rate:"9.5"
   },
@@ -21,16 +22,40 @@ Page({
   onShow: function () {
     this.getTabBar().init();
     
-    var Mock = require('../../node_modules/mockjs')
-    var data = Mock.mock({
-        // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
-        'list|1-10': [{
-            // 属性 id 是一个自增数，起始值为 1，每次增 1
-            'id|+1': 1
-        }]
+    //权宜之计，用mockjs模拟数据
+    var Mock = require('mockjs')
+    var hospital = Mock.mock({
+      "array|1": [
+        {
+          name: '复旦大学附属中山医院',
+          image: 'https://img.yzcdn.cn/vant/cat.jpeg',
+          address: '上海市徐汇枫林路180号',
+          tags: ["三甲医院","距离最近"],
+          mAmount: '1201',
+          rate: '5.0'
+        },
+        {
+          name: '上海交通大学医学院附属新华医院',
+          image: 'https://img.yzcdn.cn/vant/cat.jpeg',
+          address: '上海市杨浦区控江路1665号',
+          tags: ['三甲医院','人气最高','周末上班'],
+          mAmount: '788',
+          rate: '5.0'
+        }
+      ]
     })
     // 输出结果
-    console.log(JSON.stringify(data, null, 4))
+    console.log(hospital)
+    console.log(hospital.array.name)
+    this.setData({
+      hospital_name: hospital.array.name,
+      hospital_image: hospital.array.image,
+      hospital_address: hospital.array.address,
+      hospital_tags: hospital.array.tags,
+      hospital_mAmount: hospital.array.mAmount,
+      hospital_rate: hospital.array.rate
+
+    })
   },
 
 

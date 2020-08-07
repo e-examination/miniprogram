@@ -16,13 +16,12 @@
 <!-- ↓定点合作医院↓ -->
 
 
-
 <van-card  title="{{hospital_name}}" custom-class="card">
 
   <van-image slot="thumb" src=" {{hospital_image}}" fit="cover" width="180rpx" height="180rpx" />
   
   <view slot="tags" class="tag-Box">
-    <van-tag wx:for="{{3}}" class="tag" plain type="success">标签</van-tag>
+    <van-tag wx:for="{{hospital_tags}}" class="tag" plain type="success">{{item}}</van-tag>
     <text class="score">评分{{hospital_rate}}</text>
   </view>
 
