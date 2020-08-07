@@ -1,1 +1,54 @@
 /* pages/medicaltest/medicaltest.wxss */
+.image-group {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 30rpx;
+}
+.image-group image {
+  display: inline-block;
+  width: 700rpx;
+  height: 350rpx;
+  margin-right: 20rpx;
+  margin-left: 25rpx;
+}
+.infocontainer{
+  text-align: left;
+  background: #ffffff;
+  width: 700rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+  margin-left: 25rpx;
+  margin-bottom: 10rpx;
+  border-radius: 10px;
+}
+.info{
+  margin-left: 40rpx;
+  font-size:large;
+  font-weight:"bold";
+}
+.info1{
+  margin-left: 40rpx;
+  font-size: small;
+}
+.info2{
+  font-size: small;
+  font-weight:"lighter";
+}
+.infocontainer1{
+  text-align: left;
+  background: #ffffff;
+  width: 600rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+  margin-left: 45rpx;
+  
+}
+.infocontainer2{
+  text-align: left;
+  background: #ffffff;
+  width: 600rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+  margin-left: 45rpx;
+  
+}
