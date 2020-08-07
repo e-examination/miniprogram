@@ -11,33 +11,24 @@
 />
 
 
-<my-naviMenu description="定点合作医院" learnMore="更多医院" url="../../pages/auth/auth" />
+<my-naviMenu description="定点合作医院" learnMore="更多医院" url="../../pages/all-hospital/all-hospital" />
 
 <!-- ↓定点合作医院↓ -->
+<!-- *****其中URL属性后期做页面传参***** -->
+<my-hospitalCard 
+  image="{{hospital_image}}"
+  name="{{hospital_name}}"
+  address="{{hospital_address}}"
+  rate="{{hospital_rate}}"
+  amount="{{hospital_mAmount}}"
+  tags="{{hospital_tags}}"
+  url="../../pages/hospital/hospital"
+/>
 
-
-<van-card  title="{{hospital_name}}" custom-class="card">
-
-  <van-image slot="thumb" src=" {{hospital_image}}" fit="cover" width="180rpx" height="180rpx" />
-  
-  <view slot="tags" class="tag-Box">
-    <van-tag wx:for="{{hospital_tags}}" class="tag" plain type="success">{{item}}</van-tag>
-    <text class="score">评分{{hospital_rate}}</text>
-  </view>
-
-  <view slot="bottom">
-    <van-row type="flex" justify="space-between">
-      <van-col span="6">{{hospital_address}}</van-col>
-      <van-col span="6"></van-col>
-      <van-col span="4" offset="10">月销{{hospital_mAmount}}</van-col>
-    </van-row>
-  </view>
-
-</van-card>
 
 
 <!-- ↓精选套餐↓ -->
-<my-naviMenu description="精选套餐" learnMore="全部体检" url="../../pages/auth/auth" />
+<my-naviMenu description="精选套餐" learnMore="全部体检" url="../../pages/all-medicaltest/all-medicaltest" />
 
 <van-tabs active="{{ active }}" swipeable="true" custom-class="tabs-root">
 
@@ -74,6 +65,4 @@
 
 <!-- ↓个性定制↓ -->
 <my-naviMenu description="体检定制"/>
-<van-cell></van-cell>
-<van-cell></van-cell>
 <van-cell></van-cell>

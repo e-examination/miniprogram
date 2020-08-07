@@ -1,0 +1,36 @@
+<!--components/hospitalCards.wxml-->
+
+
+<!-- 医院卡片 -->
+<view class="card" bind:tap="linkTo">
+
+    <!-- 卡片左侧是医院图片 -->
+    <van-image src="{{image}}" width="180rpx" height="180rpx" fit="cover" />
+
+    <!-- 卡片右侧是医院相关描述 -->
+    <view  class="desc">
+
+        <!-- 医院名称 -->
+        <text class="hospitalName">{{name}}</text>
+
+
+        <!-- 医院评分与预约人数 -->
+        <view class="rate-amount">
+            <van-rate value="{{ rate }}"  size="20rpx"  gutter="4rpx" allow-half  color="#ee0a24"  void-color="#eee"  void-icon="star"/>
+            <text class="rateNum">{{rate}}分</text>
+            <text class="amount">已约{{amount}}人</text>
+        </view>
+
+
+        <!-- 医院地址 -->
+        <text class="hospitalAddress">{{address}}</text>
+        
+
+        <!-- 医院标签 -->
+        <view class="tags">
+            <van-tag plain custom-class="tag" wx:for="{{tags}}">{{item}}</van-tag>
+        </view>
+        
+    </view>
+</view>
+

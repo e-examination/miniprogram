@@ -31,7 +31,8 @@
     "pages/all-hospital/all-hospital",
     "pages/all-medicaltest/all-medicaltest",
     "pages/hospital/hospital",
-    "pages/medicaltest/medicaltest"
+    "pages/medicaltest/medicaltest",
+    "pages/takeOrder/takeOrder"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

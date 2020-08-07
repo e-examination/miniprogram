@@ -45,8 +45,6 @@ Page({
       ]
     })
     // 输出结果
-    console.log(hospital)
-    console.log(hospital.array.name)
     this.setData({
       hospital_name: hospital.array.name,
       hospital_image: hospital.array.image,

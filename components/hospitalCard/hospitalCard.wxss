@@ -1,0 +1,65 @@
+/* components/hospitalCards.wxss */
+
+/*注意，组件中不能使用id选择器*/
+
+
+/*医院卡片整体样式*/
+.card{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*右边部分整体样式*/
+.desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 70%;
+}
+
+
+/*医院名称样式*/
+.hospitalName{
+    font-size: small;
+    font-weight: bold;
+}
+
+.rate-amount{
+    display: flex;
+    align-items: baseline;
+    /*为便于理解，暂时保留border*/
+    border: 2px solid mediumpurple;
+}
+
+/*评分显示样式*/
+.rateNum{
+    margin-left: 5rpx;
+    font-size: x-small;
+    color: #ee0a24;
+}
+
+/*预约人数显示样式*/
+.amount{
+    margin-left: auto;
+    font-size: x-small;
+    color: #c7c7c7
+}
+
+
+/*医院地址样式*/
+.hospitalAddress{
+    font-size: small;
+    color: #c7c7c7;
+}
+
+/*标签显示样式*/
+.tag{
+    font-size: x-small;
+    margin-right: 10rpx;
+}
+
+
+
