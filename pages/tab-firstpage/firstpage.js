@@ -1,3 +1,5 @@
+const { mock } = require("../../node_modules/mockjs");
+
 // pages/tab-firstpage/firstpage.js
 Page({
 
@@ -6,16 +8,11 @@ Page({
    */
   data: {
     active: 0,
-    test_status: "更多医院",
-    test_name: "北京协和医院",
-    test_image: "https://img.yzcdn.cn/vant/cat.jpeg",
-    test_price: "230",
-    test_person: "张三",
-    test_starttime: "2020-2-20",
-    test_hospital: "北京协和医院",
-    test_place:"杨浦区",
-    test_num:"250",
-    test_num1:"9.5"
+    hospital_name: "北京协和医院",
+    hospital_image: "https://img.yzcdn.cn/vant/cat.jpeg",
+    hospital_address:"北京市东城区帅府园1号",
+    hospital_mAmount:"250",
+    hospital_rate:"9.5"
   },
 
   /**
@@ -23,6 +20,17 @@ Page({
    */
   onShow: function () {
     this.getTabBar().init();
+    
+    var Mock = require('../../node_modules/mockjs')
+    var data = Mock.mock({
+        // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
+        'list|1-10': [{
+            // 属性 id 是一个自增数，起始值为 1，每次增 1
+            'id|+1': 1
+        }]
+    })
+    // 输出结果
+    console.log(JSON.stringify(data, null, 4))
   },
 
 
