@@ -12,6 +12,7 @@
 
 .userAvatar{
     
+    margin-top: 30px;
     width: 80px;
     height: 80px; 
     border-radius: 50%;  
@@ -21,9 +22,7 @@
 }
 
 .userNickName{
-    
+    margin: 50px;
     color: black;
-    margin-top: 100px;
-
 }
 

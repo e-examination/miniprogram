@@ -3,7 +3,7 @@
   "usingComponents": {
 
     "my-naviMenu": "../../components/navigateMenu/navigateMenu",
-
+    "my-hospitalCard": "../../components/hospitalCard/hospitalCard",
 
     "van-search": "@vant/weapp/search/index",
 
