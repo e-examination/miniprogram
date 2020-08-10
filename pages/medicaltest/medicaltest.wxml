@@ -1,0 +1,62 @@
+<!--pages/medicaltest/medicaltest.wxml-->
+<scroll-view class="image-group" scroll-x="true">
+ <image src="{{test_image}}"></image>
+ <image src="{{test_image}}"></image>
+ <image src="{{test_image}}"></image>
+ <image src="{{test_image}}"></image>
+ <image src="{{test_image}}"></image>
+ <image src="{{test_image}}"></image>
+</scroll-view>
+ <view class="infocontainer">
+   <text class="info" space="ensp"  >福州市第一医院体检中心入职A体验太惨\n</text>
+   <van-tag plain class="info1" type="primary">标签</van-tag>
+   <text>\n</text>
+   <view class="infocontainer1">
+   <text class="info2" space="ensp" >导航放开减肥吧开个宝宝卡不反抗不卡部分那可就办公空间发不看不看发表看不见啊发\n</text>
+   </view>
+ <view class="infocontainer2">
+   <text class="info2" space="ensp" >$ 150</text><van-tag color="#7232dd" plain>标签</van-tag>
+   <van-stepper value="{{ 1 }}" bind:change="onChange" />
+ </view>
+ </view>
+<van-tabs active="{{ active }}" bind:change="onChange">
+
+  <van-tab title="标签 1">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="1"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
+  <van-tab title="标签 2">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="2"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
+  <van-tab title="标签 3">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="3"/>
+      </van-grid>
+    </view>
+  </van-tab>
+  <van-tab title="标签 4">
+    <view >
+      <van-grid column-num="1" use-slot>
+        <van-grid-item text="4"/>
+      </van-grid>
+    </view>
+  </van-tab>
+
+</van-tabs>
+<van-goods-action>
+  <van-goods-action-icon icon="home-o"  text="医院"  />
+  <van-goods-action-icon icon="phone-o" text="电话"  />
+  <van-goods-action-icon icon="service-o" text="在线"  />
+ 
+  <van-goods-action-button color="#7232dd" text="立即预约"  />
+</van-goods-action>

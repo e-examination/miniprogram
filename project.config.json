@@ -27,7 +27,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"packNpmManually": false,
 		"packNpmRelationList": []
@@ -98,6 +98,13 @@
 					"id": -1,
 					"name": "个人信息界面",
 					"pathName": "pages/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/medicaltest/medicaltest",
+					"pathName": "pages/medicaltest/medicaltest",
 					"scene": null
 				}
 			]

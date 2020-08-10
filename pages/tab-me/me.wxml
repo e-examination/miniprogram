@@ -16,9 +16,9 @@
 <van-grid column-num="3" square gutter="{{ 10 }}" >
   <van-grid-item icon="user-o" text="个人资料"  url="../userInfo/userInfo"/>
 
-  <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字"  />
+  <van-grid-item icon="photo-o" text="快速预约"  />
+  <van-grid-item icon="photo-o" text="体检记录" url="../testhistory/testhistory" />
+  <van-grid-item icon="photo-o" text="用户指南"  />
+  <van-grid-item icon="photo-o" text="关于我们"  />
+  <van-grid-item icon="photo-o" text="意见反馈"  />
 </van-grid>

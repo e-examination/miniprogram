@@ -1,3 +1,5 @@
+const { mock } = require("mockjs");
+
 // pages/tab-firstpage/firstpage.js
 Page({
 
@@ -6,16 +8,12 @@ Page({
    */
   data: {
     active: 0,
-    test_status: "更多医院",
-    test_name: "北京协和医院",
-    test_image: "https://img.yzcdn.cn/vant/cat.jpeg",
-    test_price: "230",
-    test_person: "张三",
-    test_starttime: "2020-2-20",
-    test_hospital: "北京协和医院",
-    test_place:"杨浦区",
-    test_num:"250",
-    test_num1:"9.5"
+    hospital_name: "北京协和医院",
+    hospital_image: "https://img.yzcdn.cn/vant/cat.jpeg",
+    hospital_address:"北京市东城区帅府园1号",
+    hospital_tags: ['三甲医院','周六上班'],
+    hospital_mAmount:"250",
+    hospital_rate:"9.5"
   },
 
   /**
@@ -23,6 +21,39 @@ Page({
    */
   onShow: function () {
     this.getTabBar().init();
+    
+    //权宜之计，用mockjs模拟数据
+    var Mock = require('mockjs')
+    var hospital = Mock.mock({
+      "array|1": [
+        {
+          name: '复旦大学附属中山医院',
+          image: 'https://img.yzcdn.cn/vant/cat.jpeg',
+          address: '上海市徐汇枫林路180号',
+          tags: ["三甲医院","距离最近"],
+          mAmount: '1201',
+          rate: '5.0'
+        },
+        {
+          name: '上海交通大学医学院附属新华医院',
+          image: 'https://img.yzcdn.cn/vant/cat.jpeg',
+          address: '上海市杨浦区控江路1665号',
+          tags: ['三甲医院','人气最高','周末上班'],
+          mAmount: '788',
+          rate: '5.0'
+        }
+      ]
+    })
+    // 输出结果
+    this.setData({
+      hospital_name: hospital.array.name,
+      hospital_image: hospital.array.image,
+      hospital_address: hospital.array.address,
+      hospital_tags: hospital.array.tags,
+      hospital_mAmount: hospital.array.mAmount,
+      hospital_rate: hospital.array.rate
+
+    })
   },
 
 
