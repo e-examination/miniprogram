@@ -1,0 +1,19 @@
+<view class="inner">
+
+  <!-- 组件左边：图标 -->
+  <van-icon name="like-o" />
+
+  <!-- 组件中间：体检项目 -->
+  <text class="classification">{{description}}</text>
+
+  <!-- 组件中左下：医生 -->
+  <text class="doctorr" bind:tap="getMoreInfo">{{doctor}}</text>
+
+  <!-- 组件右下：时间 -->
+  <text class="timee" bind:tap="getMoreInfo">{{time}}</text>
+
+  <!-- 组件右边：状态 -->
+  <text class="statuss" bind:tap="getMoreInfo">{{status}}</text>
+
+  <slot></slot>
+</view>

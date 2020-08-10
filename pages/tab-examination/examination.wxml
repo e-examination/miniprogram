@@ -34,7 +34,18 @@
 
 
 <!-- ↓已开始↓ -->
-
+<view class="divLine"></view>
+<my-underway description="卡介苗" doctor="王医生"  time="2020.8.9"  status="排队中"/>
+<view class="divLine"></view>
+<my-underway description="眼科" doctor="刘医生"  time="2020.8.9"  status="等待中"/>
+<view class="divLine"></view>
+<my-underway description="鼻科" doctor="张医生"  time="2020.8.9"  status="等待中"/>
+<view class="divLine"></view>
+<my-underway description="喉科" doctor="李医生"  time="2020.6.35"  status="已完成"/>
+<view class="divLine"></view>
+<my-underway description="骨科" doctor="赵医生"  time="2020.7.9"  status="已完成"/>
+<view class="divLine"></view>
+<my-underway description="心脏科" doctor="钱医生"  time="2020.7.26"  status="已完成"/>
+<view class="divLine"></view>
 
 <!-- 出错了 -->
-<van-empty  wx:else image="error" description="出现未知错误" />

@@ -2,6 +2,7 @@
   "navigationBarTitleText": "体检记录",
 
   "usingComponents": {
-    "van-empty": "@vant/weapp/empty/index"
+    "van-empty": "@vant/weapp/empty/index",
+    "my-underway": "../components/underway/underway"
   }
 }

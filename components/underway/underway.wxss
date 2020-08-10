@@ -1,0 +1,31 @@
+.inner{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.classification{
+  font-size: large;
+  margin-right: 10px;
+}
+
+.doctorr{
+  font-size: medium;
+  color: silver;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.timee{
+  font-size: medium;
+  color: silver;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.statuss{
+  font-size: medium;
+  color: blue;
+  margin-right: 20px;
+}

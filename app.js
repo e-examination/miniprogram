@@ -305,7 +305,7 @@ App({
     logined: false, //用户是否登录
     authsetting: null, //用户授权结果
     userinfo: null, //用户信息(包含自定义登录态token)
-    mode: 2//体检状态，用于识别tab-examination页面的展示。1：未预约；2：已预约，未开始；3：已开始
+    mode: 3//体检状态，用于识别tab-examination页面的展示。1：未预约；2：已预约，未开始；3：已开始
   },
   /*
   globalData: {
