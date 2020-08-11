@@ -27,7 +27,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"packNpmManually": false,
 		"packNpmRelationList": []
@@ -105,6 +105,13 @@
 					"id": -1,
 					"name": "pages/medicaltest/medicaltest",
 					"pathName": "pages/medicaltest/medicaltest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tab-firstpage/firstpage",
+					"pathName": "pages/tab-firstpage/firstpage",
 					"scene": null
 				}
 			]

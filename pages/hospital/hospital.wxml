@@ -1,2 +1,56 @@
 <!--pages/hospital/hospital.wxml-->
-<text>pages/hospital/hospital.wxml</text>
+
+<!--<text>{{name}}</text>
+<text>呵呵</text>-->
+<!-- <image class='img-class' src='https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike72%2C5%2C5%2C72%2C24/sign=2f3a8c47f4deb48fef64a98c9176514c/78310a55b319ebc4658560bf8526cffc1e171612.jpg'></image>-->
+<view class="background-image">
+  <image  src="https://img.yzcdn.cn/vant/cat.jpeg"  mode="widthFix"  />
+</view>
+<view class="info_con info_head">
+     <view class="info_tl">
+        <view class="main_title">{{name}}</view>
+           <view class="info_tl2">
+           
+           
+           </view>
+     </view>
+     <view class="rate_box">
+     <view class="rate_title">评分：</view>
+     <view class="rate_form">{{rate}}</view>
+     <view class="rate_full">/5.0</view>
+     </view>
+
+     <view class="normal_tl">
+     <van-icon name="location-o" />
+     <text>{{address}}</text>
+     </view>
+
+     <view class="normal_tl">
+     <van-icon name="clock-o" />
+     <text>上班时间：</text>
+     </view>
+
+    
+
+     
+ </view>
+<view class="info_con ">
+<view class="notice">
+<view>
+<van-icon name="bullhorn-o" />
+<text>通知：notice notice notice notice notice</text>
+</view>
+</view>
+</view>
+
+<van-sidebar v-model="activeKey">
+  <van-sidebar-item title="标签名称" />
+  <van-sidebar-item title="标签名称" />
+  <van-sidebar-item title="标签名称" />
+</van-sidebar>
+
+<!--<view class='item_view'>
+
+     <image class='img-class' src="https://img.yzcdn.cn/vant/cat.jpeg"/>
+    <text class='text_num'>+3</text>
+  </view>-->
