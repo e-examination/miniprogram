@@ -1,1 +1,108 @@
 /* pages/hospital/hospital.wxss */
+page{ background: #efecf5;}
+.item_view{
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-class{
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  position: fixed;
+}
+
+.text_num{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+ 
+  opacity: 0.5;
+  font-size: 14px;
+  color:black;
+  z-index: 100;
+  position: fixed;
+}
+/*首部背景图*/
+.background-image image{
+  display:inherit;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.info_con{ 
+  width: 640rpx;
+  margin: 0 auto; 
+  padding: 20rpx;
+  background: #ffffff;
+  border-radius:15rpx;
+  margin-bottom: 20rpx;
+}
+
+.info_head{ 
+  margin-top: -80rpx;
+}
+/*表单样式*/
+.info_tl,.info_list{
+  display: flex;
+  /*font-size: 35rpx; */
+  justify-content: space-between; 
+  /*line-height: 40rpx; */
+  padding:15rpx 25rpx; 
+  /*下划线*/
+  border-bottom: 1rpx solid #d3d3d3;
+}
+/*第一文本框样式*/
+.info_tl1{
+  
+   vertical-align: middle;
+  }
+  /*第二文本框样式*/
+.info_tl2 text{
+   font-size: 20rpx;
+  }
+
+  .rate_box{
+  display: flex;
+  justify-content:baseline;
+  border-bottom: 1rpx solid #d3d3d3;
+  }
+  /*主标题*/
+ .main_title {
+ font-size: 50rpx;
+ font-weight: bold;
+
+ }
+ /*评分标题*/
+ .rate_title {
+  font-size: 50rpx;
+  font-weight: bold;
+  line-height: 40px;
+  
+  }
+ .rate_form{
+   font-size: 70rpx;
+   font-weight: bolder;
+   color: lightskyblue;
+   
+ }
+ .rate_full{
+   font-size: small;
+   color: rgb(160, 159, 159);
+   line-height: 50px;
+ }
+ .normal_tl{
+ display: flex;
+ justify-content: flex-start;
+ border-bottom: 1rpx solid #d3d3d3;
+ }
+.notice{
+
+font-size: small;
+color: orange;
+}

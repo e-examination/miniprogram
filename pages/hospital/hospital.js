@@ -1,4 +1,28 @@
 // pages/hospital/hospital.js
+
+export default {
+  data() {
+    return {
+      activeKey: 0,
+    };
+  },
+};
+
+
+
+
+
+/*export default {
+  data() {
+    return {
+      active: 0,
+      items: [{ text: '分组 1' }, { text: '分组 2' }],
+    };
+  },
+};*/
+
+
+
 Page({
 
   /**
@@ -12,7 +36,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  this.setData({
+    image:options.image,
+    name:options.name,
+    address:options.address,
+    rate:options.rate,
+    amount:options.amount,
+    tags:options.tags
 
+  })
   },
 
   /**

@@ -22,7 +22,7 @@
   rate="{{hospital_rate}}"
   amount="{{hospital_mAmount}}"
   tags="{{hospital_tags}}"
-  url="../../pages/hospital/hospital"
+  url="../../pages/hospital/hospital?name={{hospital_name}}&&image={{hospital_image}}&&address={{hospital_address}}&&rate={{hospital_rate}}"
 />
 
 
