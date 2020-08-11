@@ -14,7 +14,8 @@ Page({
     test_price: "230",
     test_person: "张三",
     test_starttime: "2020-2-20",
-    test_hospital: "北京协和医院"
+    test_hospital: "北京协和医院",
+    activeName: '1',
   },
 
   
@@ -31,6 +32,11 @@ Page({
     
   },
 
+  onChange(event) {
+    this.setData({
+      activeName: event.detail,
+    });
+  },  
   //以下暂时没有使用-----------------------------------------------------------------------------------------------
   /**
    * 生命周期函数--监听页面加载
@@ -81,5 +87,5 @@ Page({
   
   onShareAppMessage: function () {
 
-  }
+  },
 })
